@@ -9,7 +9,7 @@ const AfterSub = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/frontendThree");
+    navigate("/");
   };
 
   return (
