@@ -1,0 +1,82 @@
+.mainDiv {
+  background-color: hsl(235, 18%, 26%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contentDiv {
+    background-color: hsl(0, 0%, 100%);
+    width: 850px;
+    height: auto;
+    min-height: 540px;
+    border-radius: 20px;
+    padding: 20px 30px;
+
+    .leftCol {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding: 0 45px 0 30px;
+
+      h1 {
+        color: hsl(234, 29%, 20%);
+        font-weight: 700;
+        font-size: 49px;
+        margin-bottom: 16px;
+      }
+
+      h2 {
+        color: hsl(235, 18%, 26%);
+        font-size: 16px;
+        line-height: 1.5rem;
+      }
+
+      .tickPara {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        column-gap: 15px;
+        margin: 5px 0;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      form {
+        margin-top: 16px;
+
+        label {
+          font-weight: 700;
+          font-family: "roboto", sans-serif;
+          font-size: 13px;
+          margin-bottom: 3px;
+        }
+
+        input {
+          width: 100%;
+          border: 1.5px solid hsl(231, 7%, 60%);
+          padding: 10px 0 10px 23px;
+          border-radius: 6px;
+        }
+
+        button {
+          margin-top: 1.3rem;
+          width: 100%;
+          background: hsl(234, 29%, 20%);
+          color: hsl(0, 0%, 100%);
+          padding: 10px;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    .rightCol {
+      height: 500px;
+      background-image: url("../../assets/images/illustration-sign-up-desktop.svg");
+      border-radius: 15px;
+    }
+  }
+}
