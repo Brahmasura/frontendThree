@@ -9,9 +9,9 @@ const AfterSub = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/");
+    navigate("/frontendThree");
   };
-  
+
   return (
     <div className={style.mainDiv}>
       <div className={style.contentDiv}>
