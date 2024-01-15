@@ -1,0 +1,43 @@
+.mainDiv {
+  background-color: hsl(235, 18%, 26%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contentDiv {
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin: 25px 0 10px;
+    }
+
+    span{
+        font-weight:700;
+    }
+
+    p{
+        font-weight:400;
+    }
+
+    button {
+      margin-top: 1.3rem;
+      width: 100%;
+      border: none;
+      background: hsl(234, 29%, 20%);
+      //   background: hsl(4, 100%, 67%);
+      color: hsl(0, 0%, 100%);
+      padding: 14px;
+      border-radius: 8px;
+
+      &:hover {
+        background: linear-gradient(to right, hwb(0 4% 9%), hsl(4, 100%, 67%));
+      }
+    }
+  }
+}

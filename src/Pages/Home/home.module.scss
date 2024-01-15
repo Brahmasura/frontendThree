@@ -47,36 +47,67 @@
 
       form {
         margin-top: 16px;
+        position: relative;
 
         label {
           font-weight: 700;
-          font-family: "roboto", sans-serif;
           font-size: 13px;
           margin-bottom: 3px;
         }
 
-        input {
+        .errorPara {
+          display: inline;
+          position: absolute;
+          top: 3px;
+          right: 0;
+          color: hsl(4, 100%, 67%);
+          font-weight: 700;
+          font-size: 13px;
+        }
+
+        .inputNormal {
           width: 100%;
-          border: 1.5px solid hsl(231, 7%, 60%);
+          border: 1.2px solid hsl(231, 7%, 60%);
           padding: 10px 0 10px 23px;
           border-radius: 6px;
+        }
+
+        .inputErrored {
+          width: 100%;
+          border: 1.2px solid hsl(4, 100%, 67%);
+          background: hsl(4, 100%, 67%, 0.2);
+          padding: 10px 0 10px 23px;
+          border-radius: 6px;
+          color: hsl(4, 100%, 67%);
         }
 
         button {
           margin-top: 1.3rem;
           width: 100%;
+          border: none;
           background: hsl(234, 29%, 20%);
+          //   background: hsl(4, 100%, 67%);
           color: hsl(0, 0%, 100%);
           padding: 10px;
           border-radius: 8px;
+
+          &:hover {
+            background: linear-gradient(
+              to right,
+              hwb(9 4% 19%),
+              hsl(4, 100%, 67%)
+            );
+          }
         }
       }
     }
 
     .rightCol {
       height: 500px;
-      background-image: url("../../assets/images/illustration-sign-up-desktop.svg");
+      background-image: url(/src/assets/images/illustration-sign-up-desktop.svg);
       border-radius: 15px;
+      background-position: center;
+      background-size: auto;
     }
   }
 }
